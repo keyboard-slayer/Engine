@@ -5,6 +5,11 @@ Surface::Surface(SDL_Surface* surface)
   this->surface = surface;
 }
 
+Surface::Surface(void)
+{
+	this->surface = NULL;
+}
+
 Surface::Surface(int width, int height)
 {
   this->surface = SDL_CreateRGBSurface(0, width, height, 32, 0, 0, 0, 0);

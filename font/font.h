@@ -13,6 +13,7 @@ class Font
 		Color color;
 	
 	public:
+		Font(void);
 		Font(const char* path, int size);
 		Font(const char* path, int size, Color color);
 		Font(const char* path, int size, int r, int g, int b);

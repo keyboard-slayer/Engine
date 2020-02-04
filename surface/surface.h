@@ -10,6 +10,7 @@ class Surface {
  public:
   Surface(SDL_Surface* surface);
   Surface(int width, int height);
+  Surface(void);
   
   Surface copy(void);
   std::tuple<int, int> get_size(void);

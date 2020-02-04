@@ -10,14 +10,20 @@ void Font::init(const char* path, int size)
 	this->font = TTF_OpenFont(path, size);
 
 	if(this->font == NULL) {
-		fprintf(stderr, "Failed to load %s !\n");
+		fprintf(stderr, "Failed to load %s !\n", path);
 		exit(EXIT_FAILURE);
 	}
 }
+
+Font::Font(void)
+{
+	this->font = NULL;
+}
+
 Font::Font(const char* path, int size)
 {
 	init(path, size);
-	this->color = (Color){0, 0, 0};
+	this->color = (Color){255, 255, 255};
 }
 
 Font::Font(const char* path, int size, Color color)
