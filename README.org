@@ -1,0 +1,14 @@
+#+TITLE: Engine (yeah I need to define a name)
+#+AUTHOR: 0v3rl0w
+
+Because I think that I can't work correctly with SDL, I decided to create a semblance of Pygame in C++
+
+** How to run it ?
+
+Just git clone it, make it and that's it
+
+** Built With 
+- [[https://www.libsdl.org/][SDL2]] : The Simple DirectMedia Layer
+- [[https://www.gnu.org/software/emacs/][EMACS]] with my [[https://github.com/0v3rl0w/Emacs-Distro][own Distro]]
+
+
