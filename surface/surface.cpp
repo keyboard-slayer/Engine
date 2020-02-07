@@ -57,3 +57,4 @@ bool Surface::is_null(void)
 SDL_Surface* Surface::raw(void) {
   return this->surface;
 }
+

@@ -11,7 +11,6 @@ class Surface {
   Surface(SDL_Surface* surface);
   Surface(int width, int height);
   Surface(void);
-  
   Surface copy(void);
   std::tuple<int, int> get_size(void);
   int get_height(void);
@@ -20,6 +19,7 @@ class Surface {
   void fill(int r, int g, int b);
   Rect blit(Surface surface, int x, int y);
   SDL_Surface* raw(void);
+  void destroy(void);
 };
 
 #endif
